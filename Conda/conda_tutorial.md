@@ -35,3 +35,6 @@ conda env export > <environment-name>.yml
 ```
 conda env create -f <environment-name>.yml
 ```
+
+# Reference
+- https://stackoverflow.com/questions/49392719/get-the-anaconda-prompt-running-in-the-pycharm-terminal

@@ -1,0 +1,22 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# $ conda install --yes --file requirements.txt
+# platform: linux-64
+cython
+flask
+numpy
+scipy
+pandas
+matplotlib
+requests
+scikit-learn
+statsmodels
+scikit-image
+nltk
+seaborn
+gensim
+jupyterlab
+spyder
+
+
+
