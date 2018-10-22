@@ -24,8 +24,9 @@ def plot_ts(df, varlist,var_name, var2, score, dt):
         ax1.plot(df[dt],df[i], linestyle= '-', lw=1.5)
         ax1.set_ylabel(var_name)
     #bbox_to_anchor=(0.2,-0.15) sepecify starting position with reference 0,0 of the plot. -0.15 implies below the plot
+    # IMP use label argument in ax.scatter() or ax.plot() if labels are not coming up in the plot
     ax1.legend(bbox_to_anchor=(0.4,-0.10), loc=3,ncol=10,borderaxespad=0, edgecolor='k').draggable() #ncol makes legend horizontal. give high value like 10 when not sure of number of legends
-    ax1.tight_layout() #to prevent legend overlapping on the line series.
+
     #for creating seconfay axis
     sec = ax1.twinx()
     sec.plot(df[dt],df[score], color='k',linestyle= '-.', lw=3)
@@ -33,7 +34,9 @@ def plot_ts(df, varlist,var_name, var2, score, dt):
     ax2.plot(df[dt],df[var2], color='b',linestyle= '-', lw=1)
     ax2.set_xlabel(dt)
     ax2.set_ylabel(var2)
+    ax2.legend(loc='best', borderaxespad=0, edgecolor='k').draggable()  # ncol makes legend horizontal. give high value like 10 when not sure of number of legends
 
+    fig.tight_layout()  # to prevent legend overlapping on the line series.
 
 plt.close('all')
 
