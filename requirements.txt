@@ -18,5 +18,17 @@ gensim
 jupyterlab
 spyder
 
-
-
+gunicorn
+redis
+click
+Sphinx
+flake8
+textblob
+xlrd
+flask_cors
+psycopg2-binary
+python-dotenv
+sqlalchemy
+pyaml
+mongoengine
+awscli
