@@ -1,6 +1,7 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # $ conda install --yes --file requirements.txt
+# $ pip3 install -r requirements.txt (if you want to install using pip instead of conda
 # platform: linux-64
 cython
 flask
